@@ -6,11 +6,11 @@
       yum:
         name: python-pip
         state: present
-    -name: Install docker-py python module
+    - name: Install docker-py python module
       pip:
         name: docker-py
         state: present
-    -name: Start the container
+    - name: Start the container
       docker_container:
         name: spring-boot-docker
         image: "vccran/spring-boot-docker:0.0.1"
